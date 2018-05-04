@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#main-container{
+    width: 800px;
+    margin: 0 auto;
+}
+#mostrar-todo-container{
+    background-color: #eee;
+    padding: 10px;
+    width: 780px;
+    margin: 0 auto;
+}
+
+#nuevo-pendiente-container{
+    background-color: #eee;
+    padding: 15px;
+}
+
+#nuevo-pendiente-container input[type=text]{
+    padding: 10px;
+    width: 632px;
+}
+
+input[type=submit]{
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.pendiente{
+    padding: 10px;
+    border-bottom: solid 2px #eee;
+}
+
+.pendiente .texto{
+    display: inline-block;
+    width: 674px;
+    padding-left: 15px;
+}
+
+.pendiente .form_actualizar{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pendiente .form_eliminar{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type=checkbox]
+{
+    display: inline-block;
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+
+.deshabilitado{
+    color: #aaa;
+}
+
