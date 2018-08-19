@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    background-color: #eee;
+    margin: 0 auto;
+    width: 500px;
+    padding: 20px;
+}
+
+.opcion{
+    padding: 5px 0;
+}
+
+.barra{
+    background-color:rgb(152, 196, 236);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.seleccionado{
+    background-color: rgb(33, 90, 143);
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+}
