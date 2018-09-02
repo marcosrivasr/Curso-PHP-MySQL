@@ -1,9 +1,10 @@
-<?php
+<?
 
 class Error{
 
     function __construct(){
-        echo "Error al cargar el recurso";
+        echo "<p>Error al cargar recurso</p>";
     }
 }
+
 ?>
