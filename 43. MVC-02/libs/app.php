@@ -9,7 +9,7 @@ class App{
         $url = rtrim($url, '/');
         $url = explode('/', $url);
 
-
+     
         $archivoController = 'controllers/' . $url[0] . '.php';
 
         if(file_exists($archivoController)){
