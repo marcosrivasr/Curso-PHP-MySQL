@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    background: black;
+    padding: 10px;
+}
+
+#header ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+#header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#footer{
+    background-color: #ccc;
+    padding: 20px;
+}
+
+#main{
+    padding: 20px 0;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.error{
+    color: #ac2323;
+}
