@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background: black;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a{
+    display: inline;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.carrito{
+    float: right;
+}
+
+.carrito-active{
+    background: white;
+}
+.carrito-active a{
+    color: black;
+}
+
+main{
+    margin: 0 auto;
+    width: 600px;
+}
+
+.articulo{
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+    width: 176px;
+}
+.articulo div{
+    padding: 5px 0;
+}
+.articulo .imagen img{
+    height: 200px;
+}
+
+.articulo .titulo{
+    font-weight: bold;
+    font-size: 18px;
+}
+button{
+    border: 0;
+    border-radius: 5px;
+    background: rgb(255, 157, 10);
+    cursor: pointer;
+    padding: 10px;
+}
+
+#carrito-container{
+    width: 400px;
+    background: white;
+    border: solid 1px #000;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    display: none;
+}
+
+#tabla .fila{
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+#tabla .fila .imagen{
+    display: inline-block;
+    width: 100px;
+}
+#tabla .fila .info{
+    box-sizing: border-box;
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: top;
+    width: 273px;
+}
+
+#tabla .fila .info .nombre{
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabla .fila .info .botones{
+    padding: 20px 0 0 0;
+}
+
+#tabla p{
+    font-size: 24px !important;
+    text-align: center;
+    font-weight: bold;
+}
