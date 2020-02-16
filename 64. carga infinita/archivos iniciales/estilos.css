@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+
+body {
+    background: rgb(22, 35, 59);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#menu-container{
+    background-color: rgb(33, 88, 155);
+    color: white;
+    border-bottom: solid 1px #ccc;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#logo{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 22px;
+    width: 100px;
+}
+
+#tuits{
+    min-height: 900px;
+    width: 500px;
+    margin: 50px auto;
+}
+
+#tuits .tuit{
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#tuits .tuit .profile,#tuits .tuit .content{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tuits .tuit .profile img{
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+#tuits .tuit .profile{
+    width: 80px;
+}
+
+#tuits .tuit .content{
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 409px;
+}
+
+#tuits .tuit .content .author{
+    padding: 10px 0 5px 0;
+}
+
+#tuits .tuit .content .author .name{
+    font-weight: bolder;
+}
+
+#tuits .tuit .content .text{
+    padding: 5px 0 10px 0;
+}
+#tuits .tuit .content .image{
+    padding: 10px 0;
+}
+#tuits .tuit .content .image img{
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#more-tuits{
+    height: 100px;
+}
