@@ -1,0 +1,249 @@
+
+h2{
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+
+
+#expenses-container, #dashboard-container{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 100%;
+}
+
+#columnchart_material{
+    padding: 20px 0;
+}
+
+#main-container h3{
+    margin: 20px 0;
+}
+
+#left-container{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+#right-container{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 100%;
+    background-color: #d6e9f8;
+    box-sizing: border-box;
+}
+
+
+.transactions-container{
+    padding: 0;
+    
+}
+.transactions-container .operations-container{
+    padding: 40px 40px;
+    
+}
+.transactions-container #expenses-recents{
+    padding: 10px 20px;
+    
+}
+.transactions-container #expenses-recents h2{
+    padding: 0 20px;
+    
+}
+.preview-expense{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.preview-expense:hover{
+    background-color: rgb(38, 132, 214);
+    color: white;  
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.preview-expense:hover .expense-date{
+    color: rgba(255,255,255,0.6) !important; 
+}
+.transactions-container .preview-expense .left{
+    width: 70%;
+}
+.transactions-container .preview-expense .right{
+    width: 30%;
+}
+.transactions-container .preview-expense .expense-title{
+    vertical-align: top;
+    margin-right: 27px;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.transactions-container .preview-expense .expense-amount{
+    font-size: 16px;
+
+    text-align: right;
+    font-weight: bold;
+}
+.transactions-container .preview-expense .expense-date{
+    color: rgba(0,0,0,0.6); 
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.transactions-container .preview-expense .category{
+    font-size: 10px;
+    background: #20bbbd;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 3px 10px;
+    color: white;
+}
+.more-container{
+    padding: 10px 0;
+}
+
+#expenses-category{
+    padding: 0 40px 40px 40px;
+}
+#expenses-category #categories-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.w-20{width: calc(20% - 60px);}
+.w-30{width: 30%}
+.ws-30{width: 30%;}
+.w-40{width: calc(40% - 60px);}
+.w-50{width: 50%}
+.w-60{width: calc(60% - 60px);}
+.w-70{width: calc(70% - 60px);}
+.w-100{width: 100%}
+
+#expenses-summary{
+    background-color: rgb(34, 46, 63);
+    color: white;
+    padding: 40px;
+}
+#expenses-summary .total-expense{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+#expenses-summary .total-budget{
+    padding: 10px 0;
+}
+
+#expenses-summary .total-budget .total-budget-text{
+    font-size: 14px;
+    color:rgb(160, 189, 229);
+}
+
+#new-expense-container{
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    height: 84px;
+}
+#new-expense-container:hover{
+    background: var(--hover-color);
+    box-shadow: 0 2px 5px rgb(128, 187, 238);
+    transition: 0.5s;
+}
+
+#new-expense-container .simbolo{
+    font-size: 48px;
+}
+
+.category-total{
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px;
+}
+.category-name{
+    color: white;
+    font-size: 12px;
+    text-align: left;
+}
+.category-count{
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#background-container{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#title-bar-container{
+    width: 100%;
+    text-align: right;
+}
+
+#panel-container{
+    background-color: white;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 3px;
+}
+
+.broken{
+    color: rgb(243, 32, 32);
+}
+
+#chart-container{
+    padding: 20px 40px;
+}
+
+#panels-container{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+.panel{
+    border-radius: 10px;
+    padding: 10px;
+    
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+    box-shadow: 0 10px 20px -7px rgba(0,0,0,0.2);
+    border: solid 1px #eee;
+
+}
+.panel .title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    color: rgba(0,0,0,0.6);
+}
+.panel .datum{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    padding: 20px 0;
+}
+.panel .description{
+    color: rgba(0,0,0,0.6);
+    font-weight: bolder;
+    text-align: center;
+}
+.panel .title{
+}
+
+

@@ -1,0 +1,281 @@
+:root{
+    font-size: 14px;
+    --primary-color: rgb(38, 132, 214);
+    --hover-color: rgb(17, 80, 136);
+    --secondary-color: rgb(24, 92, 151);
+    --hover-menu: #eee;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /*border: solid 1px red;*/
+}
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: #4492d6; */
+    background-color: rgb(222, 236, 255);
+    
+}
+
+#main-container{
+    width: 100%;
+}
+
+.container{
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto;
+    background-color: white;
+    width: 900px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+#header{
+    background: rgb(34, 46, 63);
+}
+
+#header ul{
+    display: inline-block;
+}
+
+#header ul li{
+    list-style: none;
+    display: inline;
+}
+#header ul li a{
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+}
+#header ul li a:hover{
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+#header #profile-container{
+    box-sizing: border-box;
+    float: right;
+    margin-right: 10px;
+}
+#profile-container a{
+    color: white;
+    display: inline-block;
+    padding: 9px;
+}
+#profile-container:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+#profile-container:hover a{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+
+#profile-container .photo,#profile-container .name{
+    display: inline-block;
+    vertical-align: middle;
+}
+#profile-container .photo img{
+    border-radius: 50%;
+    width: 20px;
+}
+
+#profile-container:hover #submenu{
+    display: block;
+}
+
+#profile-container #submenu{
+    background-color: white;
+    position: absolute;
+    width: 200px;
+    margin-left: -72px;
+    margin-top: -2px;
+    display: none;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+#profile-container #submenu ul{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+#profile-container #submenu ul li{
+    list-style:none;
+}
+#profile-container #submenu ul li.divisor{
+    border-bottom: solid 1px #ddd;
+    display: block;
+}
+#profile-container #submenu ul li a{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+}
+#profile-container #submenu ul li a:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#footer{
+    background-color: #ccc;
+    padding: 20px;
+}
+
+#main{
+    padding: 20px 0;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center
+}
+
+.error{
+    width: 100%;
+    background-color: #ac2323;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.success{
+    width: 100%;
+    background-color: #28ac23;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+input[type=text], 
+input[type=password],
+input[type=date],
+input[type=number],
+select{
+    padding: 7px 5px;
+    border-radius: 3px;
+    outline: none;
+    border: solid 1px #ccc;
+    width: 95%;
+    margin-bottom: 5px;
+    transition: border-color 0.5s;
+}
+
+input[type=text]:focus, 
+input[type=password]:focus,
+input[type=date]:focus,
+input[type=number]:focus,
+select:focus{
+    border-bottom: solid 2px rgb(86, 119, 228);
+    margin-bottom: 4px;
+}
+input[type=submit]{
+    border: none;
+    background-color: rgb(38, 132, 214);
+    border-radius: 3px;
+    color: white !important;
+    display: inline-block;
+    padding: 10px;
+    margin: 6px 0;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+a.secondary{
+    display: block;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 5px 0;
+}
+a.secondary:hover{
+    text-decoration: underline;
+}
+label{
+    color: #222;
+    display: block;
+    padding: 10px 0;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.card{
+    border-radius: 10px;
+    padding: 10px;
+    
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.card-g1{
+    flex-grow: 1;
+}
+button{
+    border: none;
+    background-color: rgb(38, 132, 214);
+    border-radius: 3px;
+    color: white !important;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    transition: all 0.4s;
+    vertical-align: middle;
+}
+button:hover{
+    background-color: rgb(24, 97, 161);
+}
+a.close-button{
+    color: black;
+    background-color: none !important;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn-main{
+    width: 100%;
+}
+
+i.material-icons{
+    display: inline-block;
+    vertical-align: middle;
+}
+button span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h3{
+    padding: 10px 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.bs-1{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+

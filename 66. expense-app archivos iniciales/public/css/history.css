@@ -1,0 +1,79 @@
+
+
+#history-options{
+    background: rgb(34, 46, 63);;
+    color: white;
+
+    padding: 40px;
+}
+#history-container #filters-container .filter-container{
+    display: inline-block;
+    padding: 20px 10px;
+}
+#history-container #table-container{
+    padding: 40px;
+}
+#history-container table{
+    border-collapse: collapse;
+    border: solid 1px #eee;
+    font-size: 12px;
+    padding: 40px;
+}
+#history-container table thead{
+    font-weight: bold;
+    text-align: left;
+}
+#history-container table td,
+#history-container table th{
+    border-bottom: solid 1px #eee;
+    padding: 10px;
+    margin: 0;
+}
+#history-container table th:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+}
+#history-container table tbody tr{
+    padding: 0;
+    margin: 0;
+}
+#history-container table tbody tr:hover{
+    background-color: #eee;
+}
+#history-container table tbody td .category{
+    padding: 2px 10px;
+    color: white;
+    border-radius: 15px;
+}
+
+#history-container table tbody td a{
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+#history-container table tbody td a:hover{
+    background-color: var(--hover-color);
+}
+
+select{
+    width: 150px !important;
+}
+
+/* .custom-select{
+    padding: 7px 30px;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    box-shadow: none;
+    background: transparent;
+    background-image: url(arrow.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    -webkit-appearance: none;
+    outline: none;
+} */

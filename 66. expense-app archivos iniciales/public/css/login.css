@@ -1,0 +1,20 @@
+body{
+    background: #4492d6 !important;
+}
+#login-main{
+    background-color: white;
+    border-radius: 3px;
+    padding: 20px;
+    width: 300px;
+    margin: calc((100vh - 500px)/2) auto 0 auto;
+}
+
+#login-main h2{
+    padding: 20px 0;
+}
+
+#login-main p{
+    padding: 10px 0;
+}
+
+

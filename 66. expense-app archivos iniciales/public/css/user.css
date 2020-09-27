@@ -1,0 +1,75 @@
+
+
+#user-container #side-menu{
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 400px;
+    border-right: solid 1px #ddd;
+}
+
+#user-container #user-header{
+    background-color: rgb(34, 46, 63);
+    padding: 40px;
+}
+#user-container #user-info-container{
+    display: flex;
+    align-items: center;
+}
+#user-container #user-info-container #user-photo img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+#user-container #user-info-container #user-info{
+    padding-left: 20px;
+}
+#user-container #user-info-container #user-info h2{
+    color: white;
+}
+#user-container #side-menu ul{
+    margin: 0;
+    padding: 0;
+}
+#user-container #side-menu ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#user-container #side-menu ul li a{
+    color: #222;
+    display: block;
+    margin: 0;
+    padding: 15px 10px;
+    border-bottom: solid 1px rgb(243, 237, 237);
+}
+#user-container #side-menu ul li a:hover{
+    background-color: var(--hover-menu);
+    color: black;
+    text-decoration: none;
+}
+#user-container #side-menu ul li a:active{
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+#user-section-container{
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+.section{
+    padding: 20px 0;
+    border-bottom: dotted 1px #ccc;
+}
+
+.option-active{
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    text-decoration: none;
+}
