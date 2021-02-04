@@ -4,8 +4,8 @@
 
 <div id="header">
     <ul>
-        <li><a href="expenses">Home</a></li>
-        <li><a href="history">History</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="expenses">Expenses</a></li>
         <li><a href="logout">Logout</a></li>
     </ul>
 

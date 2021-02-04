@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense App - Dashboard</title>
-    <link rel="stylesheet" href="public/css/user.css">
+    <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/user.css">
 </head>
 <body>
-    <?php require 'header.php'; ?>
+    <?php require_once 'views/dashboard/header.php'; ?>
 
     <div id="main-container">
-        <div id="user-container">
+
+        <div id="user-container" class="container">
+            <div id="user-header">
+                <div id="user-info-container">
+                    <div id="user-photo">
+                    
+                    </div>
+                    <div id="user-info">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
             <div id="side-menu">
                 <ul>
                     <li><a href="#info-user-container">Personalizar usuario</a></li>
@@ -22,17 +33,20 @@
             <div id="user-section-container">
                 
                 <section id="info-user-container">
-                    <form action method="POST">
+                    <form action=<?php echo constant('URL'). 'user/updateName' ?> method="POST">
                         <div class="section">
-                            <label for="name">Nombre de usuario</label>
+                            <label for="name">Nombre</label>
                             <input type="text" name="name" id="name" autocomplete="off" required value="">
                             <div><input type="submit" value="Cambiar nombre" /></div>
                         </div>
                     </form>
 
-                    <form action="" method="POST" enctype="multipart/form-data">
+                    <form action="<?php echo constant('URL'). 'user/updatePhoto' ?>" method="POST" enctype="multipart/form-data">
                         <div class="section">
                             <label for="photo">Foto de perfil</label>
+
+                                <img src="<?php echo constant('URL') ?>public/img/photos/" width="50" height="50" />
+                            
                             <input type="file" name="photo" id="photo" autocomplete="off" required>
                             <div><input type="submit" value="Cambiar foto de perfil" /></div>
                         </div>
@@ -40,7 +54,7 @@
                 </section>
 
                 <section id="password-user-container">
-                    <form action="" method="POST">
+                    <form action="<?php echo constant('URL'). 'user/updatePassword' ?>" method="POST">
                         <div class="section">
                             <label for="current_password">Password actual</label>
                             <input type="password" name="current_password" id="current_password" autocomplete="off" required>
@@ -55,8 +69,8 @@
                 <section id="budget-user-container">
                     <form action="user/updateBudget" method="POST">
                         <div class="section">
-                            <div class="title">Definir presupuesto</div>
-                            <div><input type="number" name="budget" id="budget" autocomplete="off" required value="<?php echo $this->budget ?>"></div>
+                            <label for="budget">Definir presupuesto</label>
+                            <div><input type="number" name="budget" id="budget" autocomplete="off" required value="<?php echo $user->getBudget() ?>"></div>
                             <div><input type="submit" value="Actualizar presupuesto" /></div>
                         </div>
                     </form>
